@@ -6,7 +6,7 @@
     1. 본인 이름으로 된 브랜치를 main 브랜치에서 파생시킵니다.
     2. 본인 이름의 폴더 내에 `{문제 번호}.js` 파일을 만듭니다.
         - 문제 번호는 URL에 있습니다.
-        EX) https://school.programmers.co.kr/learn/courses/30/lessons/389632의 문제 번호는 389622
+        EX) https://school.programmers.co.kr/learn/courses/30/lessons/389632 의 문제 번호는 389622
     3. 파일 맨 위에 주석으로 문제 설명을 적습니다. (제한 사항은 선택)
     4. 문제를 해결하기 위한 코드를 작성합니다.
     5. 코드를 제출하고 체점이 통과됐다면 코드를 저장 후 commit 및 push를 진행합니다.
