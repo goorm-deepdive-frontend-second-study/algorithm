@@ -41,13 +41,32 @@ function solution(wallpaper) {
   }
   for (let i = 0; i < wallpaper.length; i++) {
     if (wallpaper[i].includes('#')) {
-        let curStartY = wallpaper[i].indexOf('#');
-        let curEndY = wallpaper[i].lastIndexOf('#') + 1;
-        startX = Math.min(startX, i);
-        startY = Math.min(startY, curStartY);
-        endX = Math.max(endX, i + 1);
-        endY = Math.max(endY, curEndY);
+      let curStartY = wallpaper[i].indexOf('#');
+      let curEndY = wallpaper[i].lastIndexOf('#') + 1;
+      startX = Math.min(startX, i);
+      startY = Math.min(startY, curStartY);
+      endX = Math.max(endX, i + 1);
+      endY = Math.max(endY, curEndY);
     }
-}
+  }
   return [startX, startY, endX, endY];
 }
+
+// 좋아 많은 풀이
+// function solution(wallpaper) {
+//   let left = [];
+//   let top = [];
+//   let right = []
+//   let bottom = [];
+//   wallpaper.forEach((v, i) => {
+//     [...v].forEach((val, ind) => {
+//       if (val === "#") {
+//         left.push(i)
+//         top.push(ind)
+//         right.push(i + 1)
+//         bottom.push(ind + 1)
+//       }
+//     })
+//   })
+//   return [Math.min(...left), Math.min(...top), Math.max(...right), Math.max(...bottom)]
+// }
